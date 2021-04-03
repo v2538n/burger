@@ -7,6 +7,7 @@
 	width: 100%;
 	top: 0;
 	left: 0;
+	padding: 20px 0;
 }
 
 .header:before {
@@ -36,11 +37,17 @@
 	display: flex;
 	position: relative;
 	z-index: 1;
+	flex-wrap: wrap;
 }
 
 .header__menu-list li {
 	list-style: none;
 	margin: 0 0 0 20px;
+}
+
+.header__menu.active .header__menu-list li {
+	flex: 0 0 100%;
+	margin-bottom: 100px;
 }
 
 .header__menu-link {
