@@ -10,5 +10,11 @@
 			$('body').toggleClass('lock');
 		});
 
+		console.log($('.s2').offset().top);
+
+		$('html, body').animate({
+			scrollTop: $('.s1').offset().top
+		});
+
 	});
 })(jQuery);
