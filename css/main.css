@@ -127,3 +127,10 @@ body.lock {
 	font-size: 16px;
 	background: #222;
 }
+
+
+/* ------------ slider ------------ */
+
+.item-slider__image {
+	width: 100vw;
+}

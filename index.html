@@ -8,6 +8,9 @@
 	<link rel="preload" href="css/burger.css" as="style">
 	<link rel="preload" href="css/scrollbar.css" as="style">
 	<link rel="preload" href="css/main.css" as="style">
+
+	<link rel="preload" href="js/jquery.js" as="script">
+	<link rel="preload" href="js/burger.js" as="script">
 	<link rel="preload" href="js/main.js" as="script">
 
 	<link rel="stylesheet" href="css/burger.css">
@@ -40,7 +43,23 @@
 
 		<main class="main-content">
 				
-			<section class="section s1"></section>
+			<section class="section s1">
+				
+				<div class="slider">
+					<div class="item-slider">
+						<picture>
+							<source srcset="img/header_slider/laptop/1.webp" type="image/webp" media="(min-width: 1200px)">
+							<source srcset="img/header_slider/tablet/1.webp" type="image/webp" media="(min-width: 768px)">
+							<source srcset="img/header_slider/mobile/1.webp" type="image/webp" media="(min-width: 280px)">
+							<source srcset="img/header_slider/laptop/1.jpg" type="image/jpeg" media="(min-width: 1200px)">
+							<source srcset="img/header_slider/tablet/1.jpg" type="image/jpeg" media="(min-width: 768px)">
+							<source srcset="img/header_slider/mobile/1.jpg" type="image/jpeg" media="(min-width: 280px)">
+							<img src="img/header_slider/tablet/1.jpg" alt="" class="item-slider__image">
+						</picture>
+					</div>
+				</div>
+
+			</section>
 			<section class="section s2"></section>
 			<section class="section s3"></section>
 			<section class="section s4"></section>
@@ -57,6 +76,7 @@
 	</div> <!-- /wrapper -->
 
 	<script src="js/jquery.js"></script>
+	<script src="js/burger.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
